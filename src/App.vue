@@ -1,6 +1,19 @@
 <template>
-  <router-view />
+  <Header />
+  <div class='cont my-8 mx-8'>
+    <router-view />
+  </div>
 </template>
+
+<script>
+import Header from '@/components/Header'
+export default {
+  name: 'Racing.Haus',
+  components: {
+    Header
+  }
+}
+</script>
 
 <style>
 #app {
